@@ -652,6 +652,10 @@ video {
   margin-top: 1rem;
 }
 
+.ml-4 {
+  margin-left: 1rem;
+}
+
 .block {
   display: block;
 }
@@ -738,6 +742,11 @@ video {
 
 .-translate-x-full {
   --tw-translate-x: -100%;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.translate-x-0 {
+  --tw-translate-x: 0px;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
@@ -899,6 +908,11 @@ video {
   line-height: 1rem;
 }
 
+.text-lg {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+}
+
 .font-normal {
   font-weight: 400;
 }
@@ -1048,6 +1062,10 @@ video {
     left: 0px;
   }
 
+  .xl\:left-72 {
+    left: 18rem;
+  }
+
   .xl\:ml-4 {
     margin-left: 1rem;
   }
@@ -1058,6 +1076,10 @@ video {
 
   .xl\:hidden {
     display: none;
+  }
+
+  .xl\:w-\[calc\(100\%_-_300px\)\] {
+    width: calc(100% - 300px);
   }
 
   .xl\:translate-x-0 {
