@@ -8,9 +8,14 @@
     <title>Dab-Admin</title>
 
     <!-- FontAwesome -->
-    <script src="https://kit.fontawesome.com/e4cf87961d.js" crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/e4cf87961d.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
-  <body class="m-0 font-sans text-base antialiased font-normal dark:bg-slate-900 leading-default bg-red-50 text-slate-500">
+  <body
+    class="m-0 font-sans text-base antialiased font-normal dark:bg-slate-900 leading-default bg-red-50 text-slate-500"
+  >
     <!-- Sidebar -->
     <!-- -translate-x-full -->
     <aside
@@ -22,7 +27,11 @@
       <!-- dark:shadow-none dark:bg-slate-850  ease-nav-brand z-990 xl:ml-6  xl:left-0 xl:translate-x-0 -->
       <div class="h-19">
         <div class="">
-          <i class="absolute top-0 right-0 pt-4 pr-4 fas fa-times cursor-pointer opacity-50 text-slate-500" sidenav-close id="btn-close-sidebar"></i>
+          <i
+            class="absolute top-0 right-0 pt-4 pr-4 fas fa-times cursor-pointer opacity-50 text-slate-500"
+            sidenav-close
+            id="btn-close-sidebar"
+          ></i>
         </div>
 
         <div class="py-6 px-8 m-0 block whitespace-nowrap text-slate-700">
@@ -33,40 +42,68 @@
 
       <hr class="h-px mt-0 bg-transparent" />
       <!-- max-h-screen -->
-      <div class="items-center block w-auto grow basis-full overflow-auto last:mb-4">
+      <div
+        class="items-center block w-auto grow basis-full overflow-auto last:mb-4"
+      >
         <ul class="flex flex-col pl-0 mb-0">
           <li class="mt-1 w-full">
-            <a href="" class="py-2 px-4 hover:bg-blue-100 text-sm my-0 mx-2 flex items-center whitespace-nowrap rounded-lg font-semibold text-slate-700 transition-colors">
-              <div class="mr-2 flex h-8 w-8 items-center justify-center rounded-lg bg-center stroke-0 text-center xl:p-2.5">
+            <a
+              href=""
+              class="py-2 px-4 hover:bg-blue-100 text-sm my-0 mx-2 flex items-center whitespace-nowrap rounded-lg font-semibold text-slate-700 transition-colors"
+            >
+              <div
+                class="mr-2 flex h-8 w-8 items-center justify-center rounded-lg bg-center stroke-0 text-center xl:p-2.5"
+              >
                 <i class="fa-solid fa-house text-red-600"></i>
               </div>
               <span class="text-slate-600 font-semibold">Dashboard</span>
             </a>
           </li>
           <li class="mt-1 w-full">
-            <a href="#detailSidebarMenu" class="py-2 px-4 hover:bg-blue-100 text-sm my-0 mx-2 flex items-center whitespace-nowrap rounded-lg font-semibold text-slate-700 transition-colors">
-              <div class="mr-2 flex h-8 w-8 items-center justify-center rounded-lg bg-center stroke-0 text-center xl:p-2.5">
+            <a
+              href=""
+              onclick="showMenu1(true)"
+              class="py-2 px-4 hover:bg-blue-100 text-sm my-0 mx-2 flex items-center whitespace-nowrap rounded-lg font-semibold text-slate-700 transition-colors"
+              aria-controls="dropdown-example"
+              data-collapse-toggle="dropdown-example"
+            >
+              <div
+                class="mr-2 flex h-8 w-8 items-center justify-center rounded-lg bg-center stroke-0 text-center xl:p-2.5"
+              >
                 <i class="fa-solid fa-cash-register text-blue-500"></i>
               </div>
               <span class="text-slate-600 font-semibold">POS</span>
             </a>
-            <ul class="flex flex-col bg-slate-300 mr-4 ml-12 rounded-lg shadow-lg py-2" id="detailSidebarMenu">
+            <ul
+              class="flex-col bg-slate-300 mr-4 ml-12 rounded-lg shadow-lg py-2 hidden"
+              id="dropdown-example"
+            >
               <li class="pl-4 my-2 hover:text-slate-800">Child 1</li>
               <li class="pl-4 my-2 hover:text-slate-800">Child 1</li>
               <li class="pl-4 my-2 hover:text-slate-800">Child 1</li>
             </ul>
           </li>
           <li class="mt-1 w-full">
-            <a href="" class="py-2 px-4 hover:bg-blue-100 text-sm my-0 mx-2 flex items-center whitespace-nowrap rounded-lg font-semibold text-slate-700 transition-colors">
-              <div class="mr-2 flex h-8 w-8 items-center justify-center rounded-lg bg-center stroke-0 text-center xl:p-2.5">
+            <a
+              href=""
+              class="py-2 px-4 hover:bg-blue-100 text-sm my-0 mx-2 flex items-center whitespace-nowrap rounded-lg font-semibold text-slate-700 transition-colors"
+            >
+              <div
+                class="mr-2 flex h-8 w-8 items-center justify-center rounded-lg bg-center stroke-0 text-center xl:p-2.5"
+              >
                 <i class="fa-solid fa-sack-dollar text-fuchsia-500"></i>
               </div>
               <span class="text-slate-600 font-semibold">Penjualan</span>
             </a>
           </li>
           <li class="mt-1 w-full">
-            <a href="" class="py-2 px-4 hover:bg-blue-100 text-sm my-0 mx-2 flex items-center whitespace-nowrap rounded-lg font-semibold text-slate-700 transition-colors">
-              <div class="mr-2 flex h-8 w-8 items-center justify-center rounded-lg bg-center stroke-0 text-center xl:p-2.5">
+            <a
+              href=""
+              class="py-2 px-4 hover:bg-blue-100 text-sm my-0 mx-2 flex items-center whitespace-nowrap rounded-lg font-semibold text-slate-700 transition-colors"
+            >
+              <div
+                class="mr-2 flex h-8 w-8 items-center justify-center rounded-lg bg-center stroke-0 text-center xl:p-2.5"
+              >
                 <i class="fa-solid fa-money-bills text-green-500"></i>
               </div>
               <span class="text-slate-600 font-semibold">Pembelian</span>
@@ -80,38 +117,68 @@
     <!-- End Sidebar -->
 
     <!-- MAIN [calc(100%_-_32px)]  -->
-    <main id="main-data" class="relative w-full bg-blue-400 pb-20 md:w-[calc(100%_-_300px)] md:left-72 transition-transform duration-300">
+    <main
+      id="main-data"
+      class="relative w-full bg-blue-400 pb-20 md:w-[calc(100%_-_300px)] md:left-72 transition-transform duration-300"
+    >
       <!-- <div class="container bg-slate-400"> -->
       <!-- Navbar -->
-      <header id="header-admin" class="bg-white relative top-4 h-19 rounded-xl shadow-lg flex justify-center items-center z-10 mx-4 md:mx-0 mb-8 transition-transform duration-300">
+      <header
+        id="header-admin"
+        class="bg-white relative top-4 h-19 rounded-xl shadow-lg flex justify-center items-center z-10 mx-4 md:mx-0 mb-8 transition-transform duration-300"
+      >
         <div class="container">
           <div class="flex items-center justify-between">
             <!-- <div class="px-4">
               <span class="block py-6 text-lg font-bold text-primary">Dashboard</span>
             </div> -->
             <div class="flex items-center px-4">
-              <button id="hamburger" name="hamburger" type="button" class="block absolute left-4 md:hidden">
+              <button
+                id="hamburger"
+                name="hamburger"
+                type="button"
+                class="block absolute left-4 md:hidden"
+              >
                 <!-- <i class="fa-solid fa-bars text-pink-600"></i> -->
-                <span class="w-[30px] h-[2px] my-2 block bg-slate-900 origin-top-left transition duration-300 ease-in-out"></span>
+                <span
+                  class="w-[30px] h-[2px] my-2 block bg-slate-900 origin-top-left transition duration-300 ease-in-out"
+                ></span>
                 <span class="w-[30px] h-[2px] my-2 block bg-slate-900"></span>
-                <span class="w-[30px] h-[2px] my-2 block bg-slate-900 origin-bottom-left transition duration-300 ease-in-out"></span>
+                <span
+                  class="w-[30px] h-[2px] my-2 block bg-slate-900 origin-bottom-left transition duration-300 ease-in-out"
+                ></span>
               </button>
             </div>
 
-            <nav id="nav-user" class="absolute right-4 flex items-center justify-center cursor-pointer">
+            <nav
+              id="nav-user"
+              class="absolute right-4 flex items-center justify-center cursor-pointer"
+            >
               <div id="nav-user-id" class="mx-4">Alexander Purbo</div>
-              <nav class="absolute top-19 bg-slate-400 w-full max-w-64 py-4 rounded-lg shadow-lg text-white font-semibold hidden transition-transform duration-300" id="nav-user-detail">
+              <nav
+                class="absolute top-19 bg-slate-400 w-full max-w-64 py-4 rounded-lg shadow-lg text-white font-semibold hidden transition-transform duration-300"
+                id="nav-user-detail"
+              >
                 <ul class="block">
                   <li class="">
-                    <a href="" class="px-4 py-2 flex hover:text-slate-800">Setting</a>
+                    <a href="" class="px-4 py-2 flex hover:text-slate-800"
+                      >Setting</a
+                    >
                   </li>
                   <li class="">
-                    <a href="" class="px-4 py-2 flex hover:text-slate-800">Logout</a>
+                    <a href="" class="px-4 py-2 flex hover:text-slate-800"
+                      >Logout</a
+                    >
                   </li>
                 </ul>
               </nav>
               <div class="rounded-full w-12 h-12">
-                <img id="nav-user-img" src="img/profile.jpg" alt="" class="rounded-full" />
+                <img
+                  id="nav-user-img"
+                  src="img/profile.jpg"
+                  alt=""
+                  class="rounded-full"
+                />
               </div>
             </nav>
           </div>
@@ -122,7 +189,9 @@
       <!-- </div> -->
 
       <!-- Card -->
-      <div class="relative bg-slate-500 text-white font-bold justify-center transition-transform duration-300 sm:flex sm:flex-wrap mx-4 md:mx-0">
+      <div
+        class="relative bg-slate-500 text-white font-bold justify-center transition-transform duration-300 sm:flex sm:flex-wrap mx-4 md:mx-0"
+      >
         <div class="max-w-sm bg-pink-500 p-2 mb-8 rounded-xl sm:w-">
           <div class="">Test</div>
         </div>
@@ -132,5 +201,43 @@
     <!-- END MAIN -->
 
     <script src="js/script.js"></script>
+    <script src="https://unpkg.com/flowbite@1.3.4/dist/flowbite.js"></script>
+    <script>
+      let icon1 = document.getElementById("icon1");
+      let menu1 = document.getElementById("dropdown-example");
+      const showMenu1 = (flag) => {
+        if (flag) {
+          // icon1.classList.toggle("rotate-180");
+          menu1.classList.toggle("hidden");
+        }
+      };
+      let icon2 = document.getElementById("icon2");
+
+      const showMenu2 = (flag) => {
+        if (flag) {
+          icon2.classList.toggle("rotate-180");
+        }
+      };
+      let icon3 = document.getElementById("icon3");
+
+      const showMenu3 = (flag) => {
+        if (flag) {
+          icon3.classList.toggle("rotate-180");
+        }
+      };
+
+      let Main = document.getElementById("Main");
+      let open = document.getElementById("open");
+      let close = document.getElementById("close");
+
+      const showNav = (flag) => {
+        if (flag) {
+          Main.classList.toggle("-translate-x-full");
+          Main.classList.toggle("translate-x-0");
+          open.classList.toggle("hidden");
+          close.classList.toggle("hidden");
+        }
+      };
+    </script>
   </body>
 </html>
